@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Button Groups </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f4f6f9;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px 0;
+      font-weight: 600;
+    }
+
+    .box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+    }
+
+    .btn {
+      transition: 0.3s;
+      border-radius: 25px !important;
+      margin: 3px;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>Button Groups</h2>
+
+  <!-- Basic -->
+  <div class="box">
+    <h5>Basic Group</h5>
+    <div class="btn-group">
+      <button class="btn btn-primary">Left</button>
+      <button class="btn btn-primary">Middle</button>
+      <button class="btn btn-primary">Right</button>
+    </div>
+  </div>
+
+  <!-- Sizes -->
+  <div class="box">
+    <h5>Sizes</h5>
+
+    <div class="btn-group btn-group-lg mb-2">
+      <button class="btn btn-success">Large</button>
+      <button class="btn btn-success">Large</button>
+    </div><br>
+
+    <div class="btn-group mb-2">
+      <button class="btn btn-success">Normal</button>
+      <button class="btn btn-success">Normal</button>
+    </div><br>
+
+    <div class="btn-group btn-group-sm">
+      <button class="btn btn-success">Small</button>
+      <button class="btn btn-success">Small</button>
+    </div>
+  </div>
+
+  <!-- Vertical -->
+  <div class="box">
+    <h5>Vertical Group</h5>
+    <div class="btn-group-vertical">
+      <button class="btn btn-info">Top</button>
+      <button class="btn btn-info">Middle</button>
+      <button class="btn btn-info">Bottom</button>
+    </div>
+  </div>
+
+  <!-- Toolbar -->
+  <div class="box">
+    <h5>Toolbar</h5>
+    <div class="btn-toolbar justify-content-center">
+      <div class="btn-group mr-2">
+        <button class="btn btn-dark">1</button>
+        <button class="btn btn-dark">2</button>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-secondary">3</button>
+        <button class="btn btn-secondary">4</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Outline -->
+  <div class="box">
+    <h5>Outline Group</h5>
+    <div class="btn-group">
+      <button class="btn btn-outline-primary">Left</button>
+      <button class="btn btn-outline-primary">Middle</button>
+      <button class="btn btn-outline-primary">Right</button>
+    </div>
+  </div>
+
+  <!-- Toggle -->
+  <div class="box">
+    <h5>Toggle Buttons</h5>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-warning active">
+        <input type="radio" name="options" checked> Active
+      </label>
+      <label class="btn btn-warning">
+        <input type="radio" name="options"> Option
+      </label>
+    </div>
+  </div>
+
+  <!-- Dropdown -->
+  <div class="box">
+    <h5>Dropdown Group</h5>
+    <div class="btn-group">
+      <button class="btn btn-danger">Action</button>
+      <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Item 1</a>
+        <a class="dropdown-item" href="#">Item 2</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
